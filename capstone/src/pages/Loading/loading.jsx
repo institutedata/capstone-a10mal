@@ -15,24 +15,23 @@ export default function App() {
   const audioRef = useRef(null);
 
   const handleNavigate = () => {
-    gsap.to(".clouds", {
-      duration: 4, // Slow down cloud transition
-      scale: 3, // Zoom in effect
-      opacity: 0,
-      onComplete: () => {
-        audioRef.current.play();
-        setTimeout(() => {
-          navigate("/home");
-        }, 1000);
-      }
-    });
+  gsap.to(".clouds", {
+    duration: 4, // Slow down cloud transition
+    scale: 3, // Zoom in effect
+    opacity: 0,
+  });
+  setTimeout(() => {
+    audioRef.current.play();
+    navigate("/home");
     gsap.to([".loader-header", ".loader-subtitle", ".button-container", ".circle-button", ".canvas-container", "h6"], {
       duration: 1, // Speed up removal of elements
       opacity: 0,
       display: "none"
     });
     setBirdsVisible(false); // Hide the birds
-  };
+  }, 500); // Shorter delay before playing audio and navigating
+};
+
 
   return (
     <div>
