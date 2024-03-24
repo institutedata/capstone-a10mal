@@ -5,7 +5,8 @@ import Home from '../src/pages/Home/home';
 import Wildlife from '../src/pages/Wildlife/wildlife';
 import Services from '../src/pages/Services/services';
 import Story from '../src/pages/Story/story';
-import Contact from '../src/pages/Contact/contact';
+import Cam from '../src/pages/Cam/cam';
+import Rainforest from '../src/pages/Rainforest/rainforest';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/wildlife" element={<Wildlife />} />
         <Route path="/services" element={<Services />} />
         <Route path="/story" element={<Story />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/cam" element={<Cam />} />
+        <Route path="/rainforest" element={<Rainforest />} />
       </Routes>
     </Router>
   );

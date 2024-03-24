@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.zoo-background {
+    background-image: url('../../assets/zoo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pin{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.item01{
+    position: absolute;
+    transform: translate(1100%, 1200%);
+}
+
+.item02{
+    position: absolute;
+    transform: translate(1700%, 500%);
+}
+
+.item03{
+    position: absolute;
+    transform: translate(1000%, -100%);
+}
+
+.item04{
+    position: absolute;
+    transform: translate(1000%, -600%);
+}
+
+.item05{
+    position: absolute;
+    transform: translate(-120%, 100%);
+}
+
+.item06{
+    position: absolute;
+    transform: translate(500%, -600%);
+}
+
+.tooltip{
+    position: absolute;
+    padding: 15px;
+    width: 13em;
+    height: 7em;
+    background-color: #ffffffdf;
+    box-sizing: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.5em;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+.pin:hover + .tooltip {
+    opacity: 1;
+  }
+
+.zoo-header{
+    font-family: 'Playfair Display', sans-serif;
+    color: black;
+}
+
+.zoo-subtitle{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+
+
+  
+

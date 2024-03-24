@@ -30,7 +30,7 @@ function Navbar() {
                         <li><Link to="/wildlife" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Wildlife</Link></li>
                         <li><Link to="/services" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Services</Link></li>
                         <li><Link to="/story" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Our Story</Link></li>
-                        <li><Link to="/contact" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Contact</Link></li>
+                        <li><Link to="/cam" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Animal Cam</Link></li>
                     </ul>
                 </div>
             </div>
