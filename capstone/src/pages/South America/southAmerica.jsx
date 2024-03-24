@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../South America/southAmerica.css'; 
 import monkeyImg from '../../assets/tamarin.png';
+import '../Wildlife/wildlife.css'
 
 export default function SouthAmerica() {
   useEffect(() => {
@@ -14,6 +15,9 @@ export default function SouthAmerica() {
   }, []);
 
   return (
+  <div>
+  
+    
     <div className="container">
       <div className="monkey-container">
         <img src={monkeyImg} alt="Monkey" className="monkey" />
@@ -26,5 +30,6 @@ export default function SouthAmerica() {
         <button className='south-america-button'>Learn More</button>
       </div>
     </div>
+  </div>
   );
 }

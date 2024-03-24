@@ -2,80 +2,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-.zoo-background {
-    background-image: url('../../assets/zoo.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+#wildlife_main_menu {
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    z-index: 1000; 
+    margin-left: -210px;
 }
 
-.pin{
-    width: 34px;
-    height: 34px;
-    cursor: pointer;
+.wildlife_inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
 }
 
-.item01{
-    position: absolute;
-    transform: translate(1100%, 1200%);
+.wildlife_inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
 }
 
-.item02{
-    position: absolute;
-    transform: translate(1700%, 500%);
+.wildlife_inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+    padding-top: 40px;
 }
 
-.item03{
-    position: absolute;
-    transform: translate(1000%, -100%);
+.wildlife_inner_main_menu ul li:nth-child(1) {
+    float: left;
 }
 
-.item04{
-    position: absolute;
-    transform: translate(1000%, -600%);
+.wildlife_inner_main_menu ul li:nth-child(2) {
+    float: left;
 }
 
-.item05{
-    position: absolute;
-    transform: translate(-120%, 100%);
+.wildlife_inner_main_menu ul li a {
+    color: rgb(113, 111, 111);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 20px 35px;
 }
 
-.item06{
-    position: absolute;
-    transform: translate(500%, -600%);
+.wildlife_inner_main_menu ul li a:hover {
+    color: orange;
 }
 
-.tooltip{
-    position: absolute;
-    padding: 15px;
-    width: 13em;
-    height: 7em;
-    background-color: #ffffffdf;
-    box-sizing: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    line-height: 1.5em;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.1s linear;
-}
-
-.pin:hover + .tooltip {
-    opacity: 1;
-  }
-
-.zoo-header{
+.wildlife_logo_text {
     font-family: 'Playfair Display', sans-serif;
-    color: black;
+    color: rgb(113, 111, 111);
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
 }
 
-.zoo-subtitle{
+.wildlife_logo_subtitle {
     font-family: 'Roboto', sans-serif;
-    color: black;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(113, 111, 111);
+    text-align: center;
+    text-decoration: none;
+}
+
+.wildlife_logo_area {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -150px;
+}
+
+.wildlife_logo_link {
+    text-decoration: none;
 }
 
 
