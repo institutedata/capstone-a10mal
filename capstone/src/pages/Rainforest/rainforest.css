@@ -1,0 +1,41 @@
+.split-screen-slider {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .split-screen-slider-inner {
+    display: flex;
+    height: 100%;
+  }
+  
+  .split-screen-slider-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .split-screen-slider-controls {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  
+  .split-screen-slider-controls button {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .split-screen-slider-controls button.active {
+    background-color: black;
+  }
+  

@@ -17,7 +17,6 @@ function Wildlife() {
   return (
     <div>
       <SouthAmerica />
-
       <div>
         <div id="wildlife_main_menu">
           <div className="wildlife_logo_area">
