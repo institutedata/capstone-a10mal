@@ -7,6 +7,7 @@ import Services from '../src/pages/Services/services';
 import Story from '../src/pages/Story/story';
 import Cam from '../src/pages/Cam/cam';
 import Rainforest from '../src/pages/Rainforest/rainforest';
+import Africa from '../src/pages/Africa/africa'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/story" element={<Story />} />
         <Route path="/cam" element={<Cam />} />
         <Route path="/rainforest" element={<Rainforest />} />
+        <Route path="/africa" element={<Africa />} />
       </Routes>
     </Router>
   );

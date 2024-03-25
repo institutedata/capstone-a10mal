@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
-import '../South America/southAmerica.css'; 
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleLeft, faCircleRight } from '@fortawesome/free-regular-svg-icons';
+import '../South America/southAmerica.css';
 import monkeyImg from '../../assets/tamarin.png';
 import '../Wildlife/wildlife.css'
 
@@ -15,21 +18,29 @@ export default function SouthAmerica() {
   }, []);
 
   return (
-  <div>
-  
-    
-    <div className="container">
-      <div className="monkey-container">
-        <img src={monkeyImg} alt="Monkey" className="monkey" />
-      </div>
-      <div className="header-container">
-        <h1 className='south-america-header'>South America Rainforest</h1>
-      </div>
-      <div className="content-container">
-        <p className='south-america-subtitle'>Explore the rich biodiversity of the rainforest.</p>
-        <button className='south-america-button'>Learn More</button>
+    <div>
+      <div className="container">
+        <div className="monkey-container">
+          <img src={monkeyImg} alt="Monkey" className="monkey" />
+        </div>
+        <div className="header-container">
+          <h1 className='south-america-header'>South America Rainforest</h1>
+        </div>
+        <div className="content-container">
+          <p className='south-america-subtitle'>Explore the rich biodiversity of the rainforest.</p>
+          <Link to="/rainforest" className='south-america-button'>Learn More</Link>
+        </div>
+        <div className="pagination-container">
+          <FontAwesomeIcon icon={faCircleLeft} />
+          <span className="left-text">Australia Bush</span>
+          <span className="right-text">African Safari</span>
+          <Link to="/africa">
+            <FontAwesomeIcon icon={faCircleRight} />
+          </Link>
+        </div>
+
+
       </div>
     </div>
-  </div>
   );
 }
