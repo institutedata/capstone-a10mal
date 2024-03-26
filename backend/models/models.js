@@ -2,13 +2,17 @@ const mongoose = require('mongoose');
 
 const animalSchema = new mongoose.Schema({
   name: String,
-  locations: String,
-  group: String,
+  location: String,
+  main_prey: String,
   habitat: String,
+  predators: String,
   diet: String,
+  favorite_food: String,
+  type: String,
+  slogan: String,
   lifespan: String,
+  weight: String,
+  top_speed: String,
 });
 
-const Animal = mongoose.model('Animal', animalSchema);
-
-module.exports = { Animal };
+module.exports = mongoose.model('Animal', animalSchema);
