@@ -81,3 +81,36 @@ body {
     text-decoration: none;
 }
 
+/* Styles for the hamburger menu */
+.hamburger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .inner_main_menu {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: flex;
+    }
+
+    #main_menu.open .inner_main_menu {
+        display: block;
+    }
+}
+
+
