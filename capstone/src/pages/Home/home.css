@@ -1,42 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 body {
     background-color: #eee2d0;
 }
 
 .video_container {
     display: flex;
-    justify-content: flex-end; 
-    height: 90vh; 
+    justify-content: flex-end;
+    height: 90vh;
     margin-right: 10%;
     margin-bottom: 14vh;
 }
 
 .video {
-    width: 35%; 
+    width: 35%;
     max-width: 800px;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .mission-text-container {
     position: absolute;
     top: 50%;
-    left: 10%; 
+    left: 10%; /* Align to the left */
     transform: translateY(-45%);
-    text-align: center;
+    text-align: center; /* Align text to the left */
     line-height: 2.5rem;
-  }
+}
 
-.mission-text{
+
+.mission-text {
     font-family: 'Playfair Display', sans-serif;
     color: rgb(113, 111, 111);
     font-size: 60px;
-    
 }
 
-.mission-text-italic{
+.mission-text-italic {
     font-family: 'Playfair Display', sans-serif;
     color: rgb(113, 111, 111);
     font-style: italic;
@@ -44,7 +43,7 @@ body {
     color: orange;
 }
 
-.mission-text-bold{
+.mission-text-bold {
     font-family: 'Playfair Display', sans-serif;
     color: rgb(113, 111, 111);
     font-weight: 2000;
@@ -52,17 +51,13 @@ body {
     color: orange;
 }
 
-.mission-text-outline{
+.mission-text-outline {
     font-family: 'Playfair Display', sans-serif;
     color: rgb(113, 111, 111);
     font-size: 80px;
-    /* -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: green;
-    -webkit-text-fill-color: transparent; */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: orange;
-    
 }
 
 .speaker-button {
@@ -75,12 +70,58 @@ body {
     cursor: pointer;
     border-radius: 10px;
     border: 3px solid orange;
-    
 }
 
 .speaker-button:hover {
     background-color: orange;
 }
 
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .video_container {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .video {
+        width: 90%;
+        margin-right: 0;
+        clip-path: none;
+    }
+
+    .mission-text-container {
+        position: relative; /* Change position to relative */
+        left: auto; /* Remove left positioning */
+        transform: translateY(0); /* Reset transform */
+        text-align: center; /* Center align text */
+        margin-top: 20px; /* Add margin-top to create space between video and text */
+    }
+
+    .speaker-button {
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .video_container {
+        margin-bottom: 10vh;
+    }
+
+    .mission-text-container {
+        transform: translate(-50%, -25%);
+    }
+
+    .speaker-button {
+        right: 20px;
+    }
+}
 
 
