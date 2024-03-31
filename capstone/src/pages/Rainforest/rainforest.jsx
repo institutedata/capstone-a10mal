@@ -1,8 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../../components/NavBar/navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
 import '../Rainforest/rainforest.css';
 import axios from "axios";
 // import Navbar from '../../components/NavBar/navbar';
