@@ -8,19 +8,21 @@ import Story from '../src/pages/Story/story';
 import Cam from '../src/pages/Cam/cam';
 import Rainforest from '../src/pages/Rainforest/rainforest';
 import Africa from '../src/pages/Africa/africa'
+import SouthAmerica from '../src/pages/South America/southAmerica';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/loading" element={<Loading />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Loading />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/wildlife" element={<Wildlife />} />
         <Route path="/services" element={<Services />} />
         <Route path="/story" element={<Story />} />
         <Route path="/cam" element={<Cam />} />
         <Route path="/rainforest" element={<Rainforest />} />
         <Route path="/africa" element={<Africa />} />
+        <Route path="/southamerica" element={<SouthAmerica />} />
       </Routes>
     </Router>
   );

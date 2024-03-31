@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft, faCircleRight } from '@fortawesome/free-regular-svg-icons';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../Africa/africa.css';
 import lionImg from '../../assets/lion.png';
 
@@ -30,7 +31,8 @@ export default function SouthAmerica() {
         </div>
         <div className="pagination-container">
           <FontAwesomeIcon icon={faCircleLeft} />
-          <span className="left-text">South American Rainforest</span>
+          {/* Use Link to navigate to the South American Rainforest page */}
+          <Link to="/southamerica" className="left-text">South American Rainforest</Link>
           <FontAwesomeIcon icon={faCircleRight} />
           <span className="right-text">South East Asia Jungle</span>
         </div>

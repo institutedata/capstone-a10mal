@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .container {
   position: relative;
 }
@@ -10,7 +16,6 @@
   z-index: 1;
   transform: translateY(90%);
   padding-right: 500px;
-
 }
 
 .image2 {
@@ -21,10 +26,9 @@
   height: 350px;
   transform: translateY(45%);
   padding-right: 100px;
-
 }
 
-.title-font{
+.title-font {
   font-family: 'Playfair Display', sans-serif;
   color: rgb(113, 111, 111);
   font-size: 40px;
@@ -37,15 +41,14 @@
   font-size: 50px;
 }
 
-.font-container{
-    position: absolute;
-    top: 50%;
-    left: 8%; 
-    transform: translateY(110%);
-    text-align: center;
-    line-height: 2.5rem;
+.font-container {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(110%);
+  text-align: center;
+  line-height: 2.5rem;
 }
-
 
 .dictate {
   margin: auto;
@@ -112,11 +115,60 @@
   cursor: pointer;
   border-radius: 10px;
   border: 3px solid orange;
-  
 }
 
 .speaker-button:hover {
   background-color: orange;
 }
 
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+  }
 
+  .image1 {
+    width: 200px;
+    padding-right: 200px;
+  }
+
+  .image2 {
+    width: 300px;
+    height: 200px;
+    padding-right: 50px;
+  }
+
+  .font-container {
+    left: 5%;
+    transform: translateY(150%);
+  }
+
+  .dictate__text-container {
+    transform: translate(-150%, 150%);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    position: relative;
+  }
+
+  .image1 {
+    width: 150px;
+    padding-right: 100px;
+  }
+
+  .image2 {
+    width: 200px;
+    height: 150px;
+    padding-right: 20px;
+  }
+
+  .font-container {
+    left: 2%;
+    transform: translateY(200%);
+  }
+
+  .dictate__text-container {
+    transform: translate(-120%, 120%);
+  }
+}

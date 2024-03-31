@@ -24,10 +24,10 @@ function Navbar() {
         <div>
             <div id="main_menu" className={isMenuOpen ? 'open' : ''}>
                 <div className="logo_area">
-                    <Link to="/" className="logo_link">
+                    <Link to="/home" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })} className="logo_link">
                         <h1 className="logo_text">Auckland Zoo</h1>
                     </Link>
-                    <Link to="/" className="logo_link">
+                    <Link to="/home"  onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })} className="logo_link">
                         <h2 className="logo_subtitle">Education</h2>
                     </Link>
                 </div>
@@ -39,11 +39,6 @@ function Navbar() {
                         <li><Link to="/cam" onMouseEnter={(e) => waveEffect(e.target)} onMouseLeave={(e) => gsap.set(e.target, { scaleY: 1 })}>Animal Cam</Link></li>
                     </ul>
                 </div>
-                <button className="hamburger_menu" onClick={toggleMenu}>
-                    <div className="line"></div>
-                    <div className="line"></div>
-                    <div className="line"></div>
-                </button>
             </div>
         </div>
     );
