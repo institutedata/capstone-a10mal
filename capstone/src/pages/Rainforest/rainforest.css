@@ -54,11 +54,11 @@
 .animal-data {
   position: absolute;
   top: 50%;
-  right: 300px; /* Adjust this value as needed */
+  right: 300px; 
   transform: translate(0, -50%);
-  width: 400px; /* Adjust this value as needed */
+  width: 400px; 
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
 

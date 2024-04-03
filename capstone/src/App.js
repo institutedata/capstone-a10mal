@@ -9,6 +9,8 @@ import Cam from '../src/pages/Cam/cam';
 import Rainforest from '../src/pages/Rainforest/rainforest';
 import Africa from '../src/pages/Africa/africa'
 import SouthAmerica from '../src/pages/South America/southAmerica';
+import Booking from '../src/pages/Booking/booking';
+
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/rainforest" element={<Rainforest />} />
         <Route path="/africa" element={<Africa />} />
         <Route path="/southamerica" element={<SouthAmerica />} />
+        <Route path="/booking" element={<Booking />} />
+        
       </Routes>
     </Router>
   );
