@@ -1,6 +1,9 @@
 import { useRef } from 'react';
 import '../Cam/cam.css';
 import Navbar from '../../components/NavBar/navbar';
+import Cursor from '../../components/Cursor/cursor';
+import Background from '../../components/Background/background';  
+import Socials from '../../components/Social Media/socials';  
 import image01 from '../../assets/otters.jpg';
 import image02 from '../../assets/meerkats.jpg';
 import image03 from '../../assets/giraffes.jpg';
@@ -68,8 +71,12 @@ export default function AnimalCam() {
     return (
       <div>
         <Navbar />
+        <Background />
+        <Socials />
+        <Cursor />
         
-        <div className='gallery-container'>
+        <div className='gallery-container'
+        >
           <div className='slider' ref={sliderRef}>
             {slidesData.map((slide, index) => (
               <div

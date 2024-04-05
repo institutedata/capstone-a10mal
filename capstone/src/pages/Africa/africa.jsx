@@ -4,6 +4,8 @@ import { faCircleLeft, faCircleRight } from '@fortawesome/free-regular-svg-icons
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../Africa/africa.css';
 import lionImg from '../../assets/lion.png';
+import Navbar from '../../components/NavBar/navbar';
+import Cursor from '../../components/Cursor/cursor';
 
 export default function SouthAmerica() {
   useEffect(() => {
@@ -38,6 +40,8 @@ export default function SouthAmerica() {
         </div>
 
       </div>
+      <Navbar />
+      <Cursor />
     </div>
   );
 }

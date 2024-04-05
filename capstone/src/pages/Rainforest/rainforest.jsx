@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../../components/NavBar/navbar';
+import Background from '../../components/Background/background';
+import Cursor from '../../components/Cursor/cursor';
 import '../Rainforest/rainforest.css';
 import axios from "axios";
-// import Navbar from '../../components/NavBar/navbar';
 import img1 from '../../assets/api_pics/alligator.jpg';
 // import img2 from '../../assets/api_pics/cottontop_tamarin.jpg';
 import img3 from '../../assets/api_pics/emperortamarin.jpg';
@@ -73,6 +74,8 @@ const SplitScreenSlider = () => {
   return (
     <div>
       <Navbar />
+      <Background />
+      <Cursor />
     <div className="split-screen-container">
       <div className="split-screen-slider" onWheel={handleScroll}>
         <div className="split-screen-slider-inner">

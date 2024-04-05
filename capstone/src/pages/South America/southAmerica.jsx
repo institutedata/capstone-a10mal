@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft, faCircleRight } from '@fortawesome/free-regular-svg-icons';
 import '../South America/southAmerica.css';
 import monkeyImg from '../../assets/tamarin.png';
-import '../Wildlife/wildlife.css'
+import '../Wildlife/wildlife.css';
+import Navbar from '../../components/NavBar/navbar';
+import Cursor from '../../components/Cursor/cursor';
 
 export default function SouthAmerica() {
   useEffect(() => {
@@ -41,6 +43,8 @@ export default function SouthAmerica() {
 
 
       </div>
+      <Navbar />
+      <Cursor />
     </div>
   );
 }
