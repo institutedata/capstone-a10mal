@@ -7,6 +7,8 @@ import Socials from '../../components/Social Media/socials.jsx';
 import image01 from '../../assets/education13.jpg';
 import image02 from '../../assets/education12.jpeg';
 import audioBg from '../../assets/storyAudio.mp3'
+import Background from '../../components/Background/background';
+import Cursor from '../../components/Cursor/cursor.jsx';
 import '../Story/story.css';
 
 export default function Story() {
@@ -41,7 +43,7 @@ export default function Story() {
 
 
   return (
-    <div className="container">
+    <div className="container" >
       <img src={image01} alt="Education" className="image1" />
       <img src={image02} alt="Learning" className="image2" />
 
@@ -152,6 +154,8 @@ export default function Story() {
 
       <Navbar />
       <Socials />
+      <Background />
+      <Cursor />
     
     </div>
   );

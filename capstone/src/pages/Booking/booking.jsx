@@ -3,6 +3,8 @@ import { Button, Form, Container } from 'react-bootstrap';
 // import { useDispatch } from 'react-redux';  
 import '../Booking/booking.css';
 import Navbar from '../../components/NavBar/navbar';
+import Background from '../../components/Background/background'
+import Cursor from '../../components/Cursor/cursor';
 
 const Booking = () => {
     const [form, setForm] = useState({
@@ -76,7 +78,9 @@ const Booking = () => {
     return (
         <>
             <Navbar />
-            <Container>
+            <Background />
+            <Cursor />
+            <Container className='booking-form'>
                 {!submitted ? (
                     <Form>
                         <h2 className='session-title'>Book a Session</h2>

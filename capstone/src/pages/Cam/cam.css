@@ -17,6 +17,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 100px;
+    margin-left: 50px;
+    
 }
 
 .slider{
@@ -83,7 +86,7 @@ body{
     position: absolute;
     bottom: 25px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-80%);
     display: flex;
     gap: 20px;
     justify-content: center;

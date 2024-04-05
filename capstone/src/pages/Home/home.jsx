@@ -6,7 +6,6 @@ import '../Home/home.css';
 import Navbar from '../../components/NavBar/navbar';
 import Cursor from '../../components/Cursor/cursor';
 import Video from '../../assets/homeVideo.mp4';
-import Frame from '../../components/Frame/frame';
 import audioBg from '../../assets/audioBg.mp3';
 import Socials from '../../components/Social Media/socials';
 
@@ -38,15 +37,11 @@ export default function Home() {
     <div>
       <Navbar />
       <Cursor />
-      <Frame />
       <Socials />
 
-      <div className="video_container">
-        <video className="video" autoPlay loop>
-          <source src={Video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div className='overlay'></div>
+      <video src={Video} autoPlay loop muted />
+      
       <div className="mission-text-container" ref={missionTextRef}>
         <h1 className='mission-text'>To bring</h1>
         <h1 className='mission-text-italic'>people</h1>
