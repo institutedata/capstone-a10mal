@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './card.module.css';
-// import imageSrc from '../../assets/education14.jpeg';
 import { useTransform, useScroll, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
