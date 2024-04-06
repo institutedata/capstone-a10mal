@@ -14,24 +14,26 @@ export default function App() {
   const [birdsVisible, setBirdsVisible] = useState(true);
   const audioRef = useRef(null);
 
-  const handleNavigate = () => {
-  gsap.to(".clouds", {
-    duration: 4, // Slow down cloud transition
-    scale: 3, // Zoom in effect
-    opacity: 0,
-  });
-  setTimeout(() => {
-    audioRef.current.play();
-    navigate("/home");
-    gsap.to([".loader-header", ".loader-subtitle", ".button-container", ".circle-button", ".canvas-container", "h6"], {
-      duration: 1, // Speed up removal of elements
+  // Updated handleNavigate function to accept a 'withSound' parameter
+  const handleNavigate = (withSound = false) => {
+    gsap.to(".clouds", {
+      duration: 4, 
+      scale: 3, 
       opacity: 0,
-      display: "none"
     });
-    setBirdsVisible(false); // Hide the birds
-  }, 500); // Shorter delay before playing audio and navigating
-};
-
+    setTimeout(() => {
+      if (withSound) {
+        audioRef.current.play(); // Play only if withSound is true
+      }
+      navigate("/home", { state: { playSound: withSound } }); // Pass playSound state to Home
+      gsap.to([".loader-header", ".loader-subtitle", ".button-container", ".circle-button", ".canvas-container", "h6"], {
+        duration: 1, 
+        opacity: 0,
+        display: "none"
+      });
+      setBirdsVisible(false);
+    }, 500);
+  };
 
   return (
     <div>
@@ -40,7 +42,7 @@ export default function App() {
       <h1 className="loader-header">Auckland Zoo</h1>
       <h2 className="loader-subtitle">Education</h2>
       <div className="button-container">
-        <button className="circle-button" onClick={handleNavigate}>
+        <button className="circle-button" onClick={() => handleNavigate(true)}>
           Enter Site
         </button>
       </div>
@@ -57,8 +59,8 @@ export default function App() {
           <CameraControls />
         </Canvas>
       </div>
-      <Link to="/home" style={{ textDecoration: "none", color: "inherit" }}>
-        <h6 style={{ position: "absolute", top: "60vh", left: "50.21%", transform: "translateX(-50%)" }} onClick={handleNavigate}>
+      <Link to={{ pathname: "/home", state: { playSound: false }}} style={{ textDecoration: "none", color: "inherit" }}>
+        <h6 style={{ position: "absolute", top: "60vh", left: "50.21%", transform: "translateX(-50%)" }} onClick={() => handleNavigate(false)}>
           Enter without sound
         </h6>
       </Link>

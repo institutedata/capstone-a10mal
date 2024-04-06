@@ -8,8 +8,6 @@ const bookingSchema = new mongoose.Schema({
   address: String,
   visitFormat: String,
   firstPreferredDate: Date,
-  secondPreferredDate: Date,
-  thirdPreferredDate: Date
 });
 
 module.exports = mongoose.model('Booking', bookingSchema);
