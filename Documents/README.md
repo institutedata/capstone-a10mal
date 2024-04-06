@@ -29,9 +29,9 @@ By creating an engaging online platform, the website can enhance the overall lea
 
 ## 🎨 Features
 
-* Navigation Bar: This hosts all the pages that are currently available on the website
-* Booking Form: A booking form that allows the user to book a session and the information is then stored in your MongoDB database
-* Screen Slider: There is a split screen slider that host a picture of a particular animal with the corresponding animal information that is pulled from the external API
+* Navigation Bar: This hosts all the pages that are currently available on the website.
+* Booking Form: A booking form that allows the user to book a session and the information is then stored in your MongoDB database.
+* Screen Slider: There is a split screen slider that host a picture of a particular animal with the corresponding animal information that is pulled from the external API.
 * Background Audio: Sounds of the jungle is hosted on the home page and our story page. Users have the ability to mute and unmute the audio.
 
 ## 🔨 Built With
