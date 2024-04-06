@@ -121,22 +121,22 @@ classDiagram
 
 ## 🖼️ UI Design
 * Loading Page
-<img src="../Documents/Other/loadingPage.png" />
+<img src="../Documents/Other/loadingPage.png" /><br></br>
 * Home Page
-<img src="../Documents/Other/homepage.png" />
+<img src="../Documents/Other/homepage.png" /><br></br>
 * Wildlife Section
-<img src="../Documents/Other/wildlifePage.png" />
+<img src="../Documents/Other/wildlifePage.png" /><br></br>
 * Animal Information
-<img src="../Documents/Other/animalInfo.png" />
+<img src="../Documents/Other/animalInfo.png" /><br></br>
 * Services
-<img src="../Documents/Other/services2.png" />
-<img src="../Documents/Other/services.png" />
+<img src="../Documents/Other/services2.png" /><br>
+<img src="../Documents/Other/services.png" /><br></br>
 * Booking Form
-<img src="../Documents/Other/bookingForm.png" />
+<img src="../Documents/Other/bookingForm.png" /><br></br>
 * Our Story
-<img src="../Documents/Other/ourStory.png" />
+<img src="../Documents/Other/ourStory.png" /><br></br>
 * Animal Cam
-<img src="../Documents/Other/animalCam.png" />
+<img src="../Documents/Other/animalCam.png" /><br></br>
 
 
 ## Acknowledgments
